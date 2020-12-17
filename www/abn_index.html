@@ -25,7 +25,7 @@
 
       $(document).ready(function () {
 
-         var BASE_URL = "backend/traiter.php?service=";
+         var BASE_URL = "../../backend/traiter.php?service=";
          //fonction pour se loger
          loger = function ()
          {
@@ -128,8 +128,7 @@
             }).done(function (msg) {
               alert(msg.code);
                if(msg.code==0){
-                  $("h1 #test").html("Erreur sur Login ou Pass!!!");
-                  document.location.href="#page3";
+                 
                } 
                else {
                   $("#anotif").html("Erreur !!!");
@@ -214,14 +213,41 @@
       </div>
 
       <div class="ui-bar">
-        <ul data-role="listview" data-inset="true">
-              <li>Acura</li>
-              <li>Audi</li>
-              <li>BMW</li>
-              <li>Cadillac</li>
-              <li>Ferrari</li>
-          </ul>
+        <table data-role="table" id="movie-table-custom" data-mode="reflow" class="movie-list ui-responsive">
+			  <thead>
+			    <tr>
+			      <th>id</th>
+			      <th>nom</th>
+			      <th>prenom</th>
+			      <th>né</th>
+			      <th>tel</th>
+			      <th>voiture</th>
+			      <th>matricule</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <th>1</th>
+			      <td>Citizen Kane</a></td>
+			      <td>1941</td>
+			      <td>100%</td>
+			      <td>74</td>
+			      <td>Orson Welles</td>
+			      <td>Orson Welles</td>
+			    </tr>
+			    <tr>
+			      <th>2</th>
+			      <td>Casablanca</a></td>
+			      <td>1942</td>
+			      <td>97%</td>
+			      <td>64</td>
+			      <td>Michael Curtiz</td>
+			      <td>fatou</td>
+			    </tr>
+			  </tbody>
+			</table>
       </div>
+
   
     <div class="ui-corner-all custom-corners">
       <div class="ui-bar ui-bar-a">
@@ -250,16 +276,16 @@
         <nav data-role="navbar">
           <ul>
            <li>
-              <a href="#page2" class="ui-btn-active ui-state-persist" data-icon = "grid" >gerant home</a>
+              <a href="#page2" class="ui-btn-active ui-state-persist" data-icon = "grid" >g-home</a>
             </li>
             <li>
-              <a href="#" class="ui-btn-active ui-state-persist" data-icon = "grid" >creer un abonne</a>
+              <a href="#" class="ui-btn-active ui-state-persist" data-icon = "grid" >abonne</a>
             </li>
             <li>
-              <a href="#page5" class="ui-btn-active ui-state-persist" data-icon = "grid" >faire une reservation</a>
+              <a href="#page5" class="ui-btn-active ui-state-persist" data-icon = "grid" >reservation</a>
             </li>
             <li>
-              <a href="#page1" class="ui-btn-active ui-state-persist" data-icon = "avatar">deconnection</a>
+              <a href="#page1" class="ui-btn-active ui-state-persist" data-icon = "avatar">exit</a>
             </li>
           </ul>
         </nav>
@@ -397,16 +423,16 @@
         <nav data-role="navbar">
           <ul>
            <li>
-              <a href="#page2" class="ui-btn-active ui-state-persist" data-icon = "grid" >gerant home</a>
+              <a href="#page2" class="ui-btn-active ui-state-persist" data-icon = "grid" >G-home</a>
             </li>
             <li>
-              <a href="#page4" class="ui-btn-active ui-state-persist" data-icon = "grid" >creer un abonne</a>
+              <a href="#page4" class="ui-btn-active ui-state-persist" data-icon = "grid" >abonne</a>
             </li>
             <li>
-              <a href="#" class="ui-btn-active ui-state-persist" data-icon = "grid" >faire une reservation</a>
+              <a href="#" class="ui-btn-active ui-state-persist" data-icon = "grid" >reservation</a>
             </li>
             <li>
-              <a href="#page1" class="ui-btn-active ui-state-persist" data-icon = "avatar">deconnection</a>
+              <a href="#page1" class="ui-btn-active ui-state-persist" data-icon = "avatar">exit</a>
             </li>
           </ul>
         </nav>
@@ -427,13 +453,39 @@
         </div>
 
         <div class="ui-bar">
-        <ul data-role="listview" data-inset="true">
-              <li>Acura</li>
-              <li>Audi</li>
-              <li>BMW</li>
-              <li>Cadillac</li>
-              <li>Ferrari</li>
-          </ul>
+        <table data-role="table" id="movie-table-custom" data-mode="reflow" class="movie-list ui-responsive">
+			  <thead>
+			    <tr>
+			      <th>id</th>
+			      <th>nom</th>
+			      <th>prenom</th>
+			      <th>né</th>
+			      <th>tel</th>
+			      <th>voiture</th>
+			      <th>matricule</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <th>1</th>
+			      <td>Citizen Kane</a></td>
+			      <td>1941</td>
+			      <td>100%</td>
+			      <td>74</td>
+			      <td>Orson Welles</td>
+			      <td>Orson Welles</td>
+			    </tr>
+			    <tr>
+			      <th>2</th>
+			      <td>Casablanca</a></td>
+			      <td>1942</td>
+			      <td>97%</td>
+			      <td>64</td>
+			      <td>Michael Curtiz</td>
+			      <td>fatou</td>
+			    </tr>
+			  </tbody>
+			</table>
       </div>
       </div>
 
